@@ -59,7 +59,7 @@
           <br><br>
           <h2></h2>
           <p></p>
-          <a href="#about" class="slider_btn">THIS IS SMS</a>     
+          <a href="{{ route('checkApplication') }}" class="slider_btn">CHECK YOUR APPLICATION STATUS</a>     
         </div>
       </li>
       <li>
@@ -69,7 +69,7 @@
         <br><br>
         <h2></h2>
         <p></p>
-        <a href="#about" class="slider_btn">THIS IS SMS</a>     
+        <a href="{{ route('checkApplication') }}" class="slider_btn">CHECK YOUR APPLICATION STATUS</a>    
       </div>
     </li>
     <li>
@@ -79,7 +79,7 @@
         <br><br>
         <h2></h2>
         <p></p>
-        <a href="#about" class="slider_btn">THIS IS SMS</a>     
+        <a href="{{ route('checkApplication') }}" class="slider_btn">CHECK YOUR APPLICATION STATUS</a>     
       </div>
     </li>
   </ul>

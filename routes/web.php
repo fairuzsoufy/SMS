@@ -24,6 +24,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/status', 'ApplicantStatusController@guest')->name('checkApplication');
+
 Route::get('/schedule', 'InterviewTimeController@index')->name('schedule');
 
 Route::get('/recruitment/add', 'ApplicantController@index')->name('addApplicant');
@@ -55,5 +57,7 @@ Route::post('/recruitment/view', 'ApplicantController@view')->name('viewCommitte
 Route::post('/recruitment/interview/submit', 'ApplicantStatusController@store')->name('submitInterview');
 
 Route::post('/filtration/submit', 'ApplicantStatusController@update');
+
+Route::post('/status/check', 'ApplicantStatusController@guest')->name('checkStatus');
 
 

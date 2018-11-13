@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use TCG\Voyager\Facades\Voyager;
 use Illuminate\Support\Facades\Validator;
+use App\Rules\CheckApplicantExists;
 use App\ApplicantStatus;
 use App\Applicant;
 use App\ApplicationStatus;
@@ -14,7 +15,7 @@ class ApplicantStatusController extends Controller
 {
 	public function __construct(){
 
-		$this->middleware('auth');
+		$this->middleware('auth')->except('guest');
 	}
 
 	public function index(Request $request){
@@ -26,6 +27,39 @@ class ApplicantStatusController extends Controller
 		$Applications = (new ApplicantStatus)->list($request);
 
 		return view('dashboard.filtration', compact('Applications', 'request'));
+	}
+
+	public function guest(Request $request){
+
+		$Applicant = NULL;
+
+		if($request->student_id){
+
+		$this->validate($request, ['student_id' => ['required', new CheckApplicantExists($request->student_id)] ]);
+
+		$Applicant = (new ApplicantStatus)->checkStatus($request->student_id);
+
+		}
+
+		$statusMap = [
+			ApplicationStatus::PENDING 	=> 'Pending',
+			ApplicationStatus::ACCEPTED => 'Accepted',
+			ApplicationStatus::REJECTED => 'Rejected' 				
+		];
+
+		$classMap = [
+			ApplicationStatus::PENDING 	=> 'warning',
+			ApplicationStatus::ACCEPTED => 'success',
+			ApplicationStatus::REJECTED => 'danger' 
+		];
+
+		$messageMap = [
+			ApplicationStatus::PENDING 	=> 'Sorry, your application is still being processed. Check back soon!',
+			ApplicationStatus::ACCEPTED => 'Congratulations on becoming a member of the SMS family! If you are reading this message, it means your application has been accepted. Someone will contact you soon with details on how to get started.',
+			ApplicationStatus::REJECTED => 'Turn that frown into a smile! You can still apply to join our main event as a delegate. We filter our applicants based on the requirements of each committee. Unfortunately, positions are limited. And we are not always able to fit everyone in. Waiting for you at our main event!',
+		];
+
+		return view('external.status', compact('Applicant', 'statusMap', 'classMap', 'messageMap'));
 	}
 
 	public function view(Request $request){

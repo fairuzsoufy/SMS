@@ -58,6 +58,12 @@ class ApplicantStatus extends Model
 
 	}
 
+	public function checkStatus($student_id){
+
+		return Applicant::get_applicant($student_id);
+
+	}
+
 	public function Applicant(){
 
 		return $this->belongsTo(Applicant::class);

@@ -16122,8 +16122,8 @@ ul {
 /* === Landing screens === */
 /* Auth */
 .auth.auth-bg-1 {
-  background: url("");
-  background-size: cover; }
+  background: url("../images/landing/Logos/SMS.png") center center no-repeat;
+  background-size: contain; }
 
 .auth.register-bg-1 {
   background: url("../images/landing/BackgroundSlider/3.JPG") center center no-repeat;
@@ -16133,7 +16133,7 @@ ul {
   background: #ffffff;
   padding: 40px 40px 10px;
   border-radius: 4px;
-  box-shadow: 0 -25px 37.7px 11.3px rgba(8, 143, 220, 0.07); }
+  box-shadow: 11px 6px 37.7px 11.3px #8BC34A }
   .auth.theme-one .auto-form-wrapper .form-group .input-group {
     height: 44px; }
     .auth.theme-one .auto-form-wrapper .form-group .input-group .form-control {
@@ -16154,7 +16154,12 @@ ul {
     font-family: "Poppins", sans-serif;
     font-size: 13px;
     padding: 12px 8px;
-    font-weight: 600; }
+    font-weight: 600;
+    background-color: #8BC34A;
+    border-color: #8BC34A; }
+  .auth.theme-one .auto-form-wrapper .form-group .submit-btn:hover {
+    background-color: #e44549;
+  }
   .auth.theme-one .auto-form-wrapper .g-login {
     border: 1px solid #f2f2f2;
     padding: 13px;
@@ -16188,7 +16193,8 @@ ul {
       justify-content: center; } }
 
 .auth.theme-one .footer-text {
-  color: rgba(255, 255, 255, 0.4); }
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600 }
 
 .auth.theme-two .auto-form-wrapper {
   position: relative;

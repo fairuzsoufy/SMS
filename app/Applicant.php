@@ -64,6 +64,11 @@ class Applicant extends Model
         
     }
 
+    public static function get_applicant($student_id){
+        
+        return Applicant::where('student_id', $student_id)->get();
+    }
+
     public function Faculty(){
 
     	return $this->belongsTo(Faculty::class);
