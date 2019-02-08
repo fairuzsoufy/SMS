@@ -40,6 +40,10 @@ Route::get('/recruitment/interview/{id}', 'ApplicantStatusController@edit')->nam
 
 Route::get('/recruitment/add/get-interview-times/{committee}', 'InterviewTimeController@getInterviewTimes');
 
+Route::get('/recruitment/guest', 'GuestController@index')->name('addGuest');
+
+Route::post('/recruitment/guest/submit', 'GuestController@store')->name('submitGuest');
+
 Route::get('/schedule/get-schedule/', 'InterviewTimeController@fetch');
 
 Route::get('/schedule/get-full-schedule/{id}', 'InterviewTimeController@fetchAll');
