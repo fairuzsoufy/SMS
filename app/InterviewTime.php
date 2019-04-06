@@ -22,7 +22,9 @@ class InterviewTime extends Model
     	$end = Carbon::parse($request->end);
     	$date = $request->date;
 
-    	$range = $user->UserCommittee->Committee->id == "4" ? 45 : 10;
+    	// $range = $user->UserCommittee->Committee->id == "4" ? 45 : 10;
+
+        $range = 15;
 
     	while($start < $end){
     		InterviewTime::create(['user_id' => $user->id,

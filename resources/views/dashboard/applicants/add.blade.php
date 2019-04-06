@@ -59,7 +59,7 @@
 								<div class="col-sm-9">
 									<div class="input-group">
 										<div class="input-group-prepend bg-primary border-primary">
-											<span class="input-group-text bg-transparent text-white">+20</span>
+											<span class="input-group-text bg-transparent text-white">+2</span>
 										</div>
 										<input class="form-control" type="number" name="phone" placeholder="1xxxxxxxxx" value = "{{ old('phone') }}" required>
 									</div>

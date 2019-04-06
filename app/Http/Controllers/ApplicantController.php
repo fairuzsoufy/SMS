@@ -54,7 +54,7 @@ class ApplicantController extends Controller
     		[
     		'first_name' 	=> 'required|string',
     		'last_name' 	=> 'required|string',
-    		'phone' 		=> 'required|string|max:10',
+    		'phone' 		=> 'required|string|max:11',
     		'email' 		=> 'required|string|max:255',
     		'faculty_id' 	=> 'required|numeric',
     		'student_id' 	=> 'required|string|max:10',
