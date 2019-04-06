@@ -45,7 +45,7 @@
                 @endif
                 @if(Voyager::can('add_applicants'))
                 <li class="nav-item {{ Route::currentRouteNamed('addGuest') ? 'active' : '' }}">
-                  <a class="nav-link" href="{{ route('addGuest') }}"><i class="menu-icon mdi mdi-account-plus"></i>Mini-Event</a>
+                  <a class="nav-link" href="{{ route('addGuest') }}"><i class="fa fa-group"></i>Mini-Event</a>
                 </li>
                 @endif
                 @if(Voyager::can('browse_applicants'))
