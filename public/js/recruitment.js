@@ -1,4 +1,15 @@
 
+$('#student_id').on('change', function(){
+
+  id = $('#student_id').val();
+  name = $('#first_name').val();
+
+  $('#email').val(name+id);
+
+
+});
+
+
 $('#committee_id').on('change', function(){
 
   var committee = $('#committee_id').val();

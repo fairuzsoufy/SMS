@@ -2,6 +2,14 @@
 
 @section('content')
 
+<div class="row purchace-popup">
+	<div class="col-12">
+		<span class="d-block d-md-flex align-items-center">
+			<p>Add all delegate applicants to the Academic Committee!</p>
+		</span>
+	</div>
+</div>
+
 <div class="row">
 	<div class="col-12 grid-margin">
 		<div class="card">

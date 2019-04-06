@@ -14493,7 +14493,7 @@ pre {
   height: 200px; }
 
 .purchace-popup > div > span {
-  background: rgba(228, 228, 228, 0.46);
+  background: rgb(157, 198, 96);
   padding: 15px 20px;
   border-radius: 3px; }
   .purchace-popup > div > span .btn {
@@ -14521,8 +14521,8 @@ pre {
   .purchace-popup > div > span p {
     margin-bottom: auto;
     margin-top: auto;
-    color: #7e7e7e;
-    font-weight: 400;
+    color: #ffffff;
+    font-weight: 500;
     vertical-align: middle;
     line-height: 1; }
   .purchace-popup > div > span i {
