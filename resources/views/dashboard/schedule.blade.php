@@ -95,16 +95,26 @@ $(document).ready(function(){
          }
     });
   $('.calendar').fullCalendar({
-  	   header:
-  	   {
-  	   	left: "prev,next today",
-  	    center: "title",
-  	    right: "month,agendaDay"
-  		},
-  	   eventLimit: true,	
-       events: JSON.parse(JSON.stringify(json_events)),
-       Duration: '10 minutes',
-       defaultView: 'agendaDay',
+    header:
+    {
+      left: "agendaDay,month,listMonth",
+      center: "title",
+    },
+    buttonText:
+    { 
+      today:    'Today',
+      month:    'Month',
+      week:     'Week',
+      list:     'List'
+    },
+    contentHeight: 600,
+    eventLimit: true,
+    selectable: true,
+    selectHelper: true,
+    defaultView: 'listMonth',
+    noEventsMessage: "Nothing to see here!", 	
+    events: JSON.parse(JSON.stringify(json_events)),
+    Duration: '15 minutes',
   });
 
 });
