@@ -82,6 +82,8 @@
                             <p>We're glad to inform you that your delegate application to attend our main event for SMS Round 14 has been <u>accepted</u>.
                             If you're receiving this e-mail, it means you're invited to attend our opening on Tuesday, tomorrow 9/4/2019 (details below). So iron your shirts and bring out those dresses and heels, and get ready for the SMS experience. </p>
 
+                            <p><strong>Attendance for all classes for the duration of the opening & main event is registered for all delegates.</strong></p>
+
                             
                             <p><strong>Time</strong>: 11:30 A.M</p>
                             <p><strong>Place</strong>: OOA hall</p>
