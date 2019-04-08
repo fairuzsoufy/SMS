@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('mail', 'MailController@index');
+
 Route::get('/', function () {
     return view('welcome');
 });
