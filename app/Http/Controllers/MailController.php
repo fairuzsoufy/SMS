@@ -12,7 +12,7 @@ class MailController extends Controller
 {
 	public function index(){
 
-		$emails = MailingList::where('emailed', 0)->orderBy('id', 'ASC')->limit(49)->get();
+		$emails = MailingList::where('emailed', 0)->orderBy('id', 'DESC')->limit(49)->get();
 
 		foreach($emails as $email){
 
