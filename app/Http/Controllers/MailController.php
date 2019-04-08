@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Applicant;
 use App\Mail\MailInvitation;
 use App\MailingList;
+use Illuminate\Support\Facades\Mail;
 
 class MailController extends Controller
 {
