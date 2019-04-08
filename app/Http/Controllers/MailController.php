@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Applicant;
 use App\Mail\MailInvitation;
+use App\MailingList;
 
 class MailController extends Controller
 {
