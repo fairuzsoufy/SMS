@@ -55,7 +55,7 @@ class ApplicantStatusController extends Controller
 
 		$messageMap = [
 			ApplicationStatus::PENDING 	=> 'Sorry, your application is still being processed. Check back soon!',
-			ApplicationStatus::ACCEPTED => 'Congratulations on becoming a member of the SMS family! If you are reading this message, it means your application has been accepted. Someone will contact you soon with details on how to get started.',
+			ApplicationStatus::ACCEPTED => 'Congratulations! Your delegate application to attend the SMS Round 14 main event has been accepted. Check your e-mail for information on how to proceed or send an e-mail to info@sms-miu.com for clarification',
 			ApplicationStatus::REJECTED => 'Turn that frown into a smile! You can still apply to join our main event as a delegate. We filter our applicants based on the requirements of each committee. Unfortunately, positions are limited. And we are not always able to fit everyone in. Waiting for you at our main event!',
 		];
 
