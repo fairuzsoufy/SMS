@@ -79,16 +79,15 @@
 
                             <h2>Hi {{ ucfirst(preg_replace('/\d+/u', '',substr($email, 0, strpos($email, '@')))) }},</h2>
 
-                            <p>We're glad to inform you that your delegate application to attend our main event for SMS Round 14 has been <u>accepted</u>.
-                            If you're receiving this e-mail, it means you're invited to attend our opening on Tuesday, tomorrow 9/4/2019 (details below). So iron your shirts and bring out those dresses and heels, and get ready for the SMS experience. </p>
+                            <p>This e-mail is to remind you that the SMS Round 14 main event starts tomorrow Wednesday 10/4/2019 (details below).</p>
+
+                            <p>Please note that you will not receive your delegate's certificate without attending the main event as well as the simulation.</p>
 
                             <p><strong>Attendance for all classes for the duration of the opening & main event is registered for all delegates.</strong></p>
 
                             
-                            <p><strong>Time</strong>: 11:30 A.M</p>
+                            <p><strong>Time</strong>: 9:00 A.M until 3:00 P.M</p>
                             <p><strong>Place</strong>: OOA hall</p>
-                            <p><strong>Dress code</strong>: semi-formal</p>
-                            
 
                             <p>For more information, visit <a href="http://sms-miu.com">our website</a>.</p>
 

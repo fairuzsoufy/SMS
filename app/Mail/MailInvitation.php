@@ -37,6 +37,6 @@ class MailInvitation extends Mailable
         ->from(env('MAIL_USERNAME'))
         ->view('emails.inv')
         ->with(['email' => $this->recipient])
-        ->subject('Stock Market Simulation - Main Event');
+        ->subject('Stock Market Simulation - Reminder');
     }
 }
