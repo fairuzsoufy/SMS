@@ -18,7 +18,10 @@ class AttendanceController extends Controller
     	$sessionExists = false;
 
     	if($request->session()->get('student_id')){
+    		$session_id = $request->session()->get('student_id');
     		$sessionExists = true;
+    		$Guest = (new Applicant)->get_applicant($session_id);
+    		$request->session()->put('GuestName', $Guest->first()->name);
     	}
 
     	return view('external.attendance', compact('sessionExists'));
