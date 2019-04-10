@@ -32,13 +32,13 @@
 							</div>
 							<div class="wrapper">
 								<div class="d-flex justify-content-between">
-									<p class="mb-2">Time until session is over</p>
+									<p class="mb-2">Session is over in </p>
 									<p class="mb-2 text-primary">{{ $session_duration." now" }}</p>
 								</div>
 							</div>
 							<div class="wrapper mt-4">
 								<div class="d-flex justify-content-between">
-									<p class="mb-2">Time since sign-in</p>
+									<p class="mb-2">You signed in </p>
 									<p class="mb-2 text-success">{{ $signin_duration." now" }}</p>
 								</div>
 							</div>
