@@ -89,5 +89,10 @@ class Applicant extends Model
 
         return $this->belongsTo(Committee::class);
     }
+
+    public function Attendance()
+    {
+        return $this->hasMany(Attendance::class);
+    }
     
 }

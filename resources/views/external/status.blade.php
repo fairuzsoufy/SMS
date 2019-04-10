@@ -66,7 +66,7 @@
             </form>
             @endif
           </div>
-          <p class="footer-text text-center">Copyright © 2018 SMS MIU. All rights reserved.</p>
+          <p class="footer-text text-center">Copyright © 2019 SMS MIU. All rights reserved.</p>
         </div>
       </div>
     </div>

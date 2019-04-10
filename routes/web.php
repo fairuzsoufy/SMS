@@ -52,6 +52,10 @@ Route::get('/schedule/get-full-schedule/{id}', 'InterviewTimeController@fetchAll
 
 Route::get('/filtration', 'ApplicantStatusController@index')->name('filtration');
 
+Route::get('/go', 'AttendanceController@index')->name('attendance');
+
+Route::get('/session', 'AttendanceController@session')->name('currentSession');
+
 Route::post('/filtration/view', 'ApplicantStatusController@index')->name('filterApplicants');
 
 Route::post('/schedule/add', 'InterviewTimeController@store')->name('addSchedule');
@@ -65,5 +69,9 @@ Route::post('/recruitment/interview/submit', 'ApplicantStatusController@store')-
 Route::post('/filtration/submit', 'ApplicantStatusController@update');
 
 Route::post('/status/check', 'ApplicantStatusController@guest')->name('checkStatus');
+
+Route::post('/go/submit', 'AttendanceController@store')->name('submitAttendance');
+
+Route::post('/session/end', 'AttendanceController@signout')->name('endSession');
 
 
