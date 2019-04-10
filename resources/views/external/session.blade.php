@@ -14,7 +14,7 @@
 							<div class="wrapper d-flex justify-content-between">
 								<div class="side-left">
 									<p class="mb-2">Signed in</p>
-									<p class="display-3 mb-4 font-weight-light">{{ $signin_time->format('H:i:s A') }}</p>
+									<p class="display-3 mb-4 font-weight-light">{{ $signin_time->format('l jS \\of F H:i:s A') }}</p>
 								</div>
 							</div>
 

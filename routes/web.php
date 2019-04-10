@@ -56,6 +56,10 @@ Route::get('/go', 'AttendanceController@index')->name('attendance');
 
 Route::get('/session', 'AttendanceController@session')->name('currentSession');
 
+Route::get('/session/refresh', 'AttendanceController@refresh_page')->name('refreshPage');
+
+Route::get('/history', 'AttendanceController@history')->name('history');
+
 Route::post('/filtration/view', 'ApplicantStatusController@index')->name('filterApplicants');
 
 Route::post('/schedule/add', 'InterviewTimeController@store')->name('addSchedule');
@@ -73,5 +77,7 @@ Route::post('/status/check', 'ApplicantStatusController@guest')->name('checkStat
 Route::post('/go/submit', 'AttendanceController@store')->name('submitAttendance');
 
 Route::post('/session/end', 'AttendanceController@signout')->name('endSession');
+
+Route::post('/session/refresh/submit', 'AttendanceController@refresh')->name('refreshSession');
 
 

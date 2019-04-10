@@ -12,9 +12,16 @@ class Attendance extends Model
 
 	public function get_session($applicant_id)
 	{
-		$Attendance = Attendance::where(['applicant_id' => $applicant_id])->whereDate('signed_in', Carbon::today())->get();
+		$Attendance = Attendance::where(['applicant_id' => $applicant_id])
+								->whereDate('signed_in', Carbon::today())
+								->get();
 
 		return $Attendance;
+	}
+
+	public function get_history($applicant_id)
+	{
+		return Attendance::where('applicant_id', $applicant_id)->get();
 	}
 
     public function Applicant()
@@ -30,7 +37,7 @@ class Attendance extends Model
     public function sign_out($applicant_id)
     {
     	$Attendance = Attendance::where(['applicant_id' => $applicant_id])
-    							  ->whereDate('signed_in', Carbon::today())
-    							  ->update(['signed_out' => Carbon::now()->format('Y-m-d H:i:s')]);
+    							->whereDate('signed_in', Carbon::today())
+    							->update(['signed_out' => Carbon::now()->format('Y-m-d H:i:s')]);
     }
 }

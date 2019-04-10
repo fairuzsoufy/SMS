@@ -24,7 +24,19 @@
 </head>
 <body>
 
-    @yield('content')
+      <div class="container-scroller">
+        @include('includes.nav-guest')
+        <div class="container-fluid page-body-wrapper">
+          @include('includes.sidebar-guest')
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    @yield('content')
+                </div>
+                @include('includes.footer')
+            </div>
+        </div>
+
+    </div>
 
     <!-- plugins:js -->
     <script src="{{asset('vendors/js/vendor.bundle.base.js')}}"></script>
